@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## A Tree-Based Model for Activity Based Travel Models and Feature Selection
 
 You can use the [editor on GitHub](https://github.com/lkuwahara/DSC180B.github.io-B05/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
