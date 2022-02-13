@@ -12,6 +12,8 @@ In a previous study, Deloitte Consulting LLP developed a method of creating city
 
 ## Data
 
+[Image](images/data1img.png)
+
 ## Techniques 
 
 ### XGBoost
