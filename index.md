@@ -11,6 +11,7 @@ In a previous study, Deloitte Consulting LLP developed a method of creating city
 ## Hypothesis
 
 ## Data
+<img src="/images/data1img.png">
 
 [Image](images/data1img.png)
 
