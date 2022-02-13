@@ -12,8 +12,8 @@ In a previous study, Deloitte Consulting LLP developed a method of creating city
 
 ## Data
 <img src="/images/data1img.png">
-
-[Image](images/data1img.png)
+<img src="/images/data2img.png">
+<img src="/images/data3img.png">
 
 ## Techniques 
 
