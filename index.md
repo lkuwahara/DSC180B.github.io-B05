@@ -39,7 +39,22 @@ Another descriptive variable we have is of income. The income group 3 is the hig
 
 ### Evaluation 
 
+After we finished the model, we created a validation pipeline to estimate the performance of our model and sought the potential problems in our model, like overfitting or imbalanced sample. For measurement of correctness, we referred to evaluation metrics such as accuracy, sensitivity, F1-score. The feedback indicates that our model did a great job on the sample data, but also causes a great deal of concern. In the next weeks, we would diagnose the problem and adjust our model accordingly.  
+  
+Below are the AUC curves for the training and testing sets over 100 epochs. We observe that the training curve improves steadily while the testing curve plateaus at an AUC of around 0.91, which means our model correctly predicts about 91\% of the test set. 
+
+<img src="/images/eval1img.png">
+
+We also plotted ROC curves for each class using the One vs All technique, which considers one class as a label and groups the others as the other label. This way, we can see which classes our model tends to perform better on. According to the AUC scores, we see that our model does best predicting school bus and drive alone paid trips, but not as well on 2-person HOV free trips. 
+
+<img src="/images/eval2img.png">
+
 ### Feature Fine-tuning
+
+To simplify our model, we want to use only a handful of features. We narrowed down our choices by evaluating the feature importances, which indicates how important each feature was in building the model. Based on the graph below, we observed that employment density at the origin and destination regions (dempden, oempden) were the two most important features in determining trip mode. We intend to use all the features as or more important than the single occupancy vehicle cost (sovcost) in our optimized mode. 
+
+<img src="/images/eval3img.png">
+
 
 ## Appendix 
 
