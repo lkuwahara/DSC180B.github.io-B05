@@ -43,19 +43,22 @@ Features:
 
 
 ## Data
-The datasets we use consists of two dataframes: trips and utilityvars. The first dataframe, trips comes from a csv that previously predicted the travel mode choice each activity took, linked to activity and person IDs.
+Our data was provided by our industry mentors, Deloitte Consulting LLP.
 
-The utilityvars data provides us information about each unique trip, to predict the target trip mode. We plotted some of the variables to get insight into the distributions of our data and the activities we have. 
+The data contains over 14 million different trips with 29 attributes of each trip. We plotted some of the attributes to get insight into the distributions of our data and the activities we have. 
 
-The targettripmode has 12 different trip modes, and its distribution is shown in the figure below. The modes range from 1 to 12, and the most common trip modes are 1, 3, and 5, which are Drive Alone Free, HOV2 Free, HOV3 Free. The least common trip modes are 6, 10, 4: HOV3 Pay, Park and Ride, HOV2 Pay. This shows that most travelling is done through driving and without paying. In most cases, it is rare that people pay when driving. 
+### Trip Modes
+We have 12 different trip modes to predict and the distribution is shown in the figure below. The most common trip modes are 1, 3, and 5, which are Drive Alone Free, HOV2 Free, HOV3 Free, meaning most trips were done through driving and without paying tolls or fees.
 
 <img src="images/data1img.png">
 
-Another variable we plotted a histogram of is age. Most activities consist of people of age groups categorized as 4, 6, 7, which are people of ages 25 and above, with more of the older age range. The gap we see between 5 to 6 is because our data on age does not have the category of 5. 
+### Age
+Most commuters were in the age groups 4, 6, and 7 which correspond to 25-40, 41-55, and 56+ years old. The gap we see between 5 to 6 is because our data on age does not have the category of 5. 
 
 <img src="images/data2img.png">
 
-Another descriptive variable we have is of income. The income group 3 is the highest, which has the average income of $60k to $100k. The lowest group for income is group 4, which is the average income of $100k to $150k. Most households in our dataset have an income that is around average, and in general, of lower income groups. Income subpopulations can be interpreted in our model because this can affect travel modes. 
+### Income 
+Most commuters fall under the average income of $60k to $100k (Group 3). The least represented group is 4, which is the average income of $100k to $150k. Most households in our dataset have an income that is around average, and in general, of lower income groups. Income subpopulations can be interpreted in our model because this can affect travel modes. 
 
 <img src="images/data3img.png">
 
