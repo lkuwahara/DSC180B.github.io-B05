@@ -2,19 +2,31 @@
 
 <style>
 .page-header {
-  background-image: url('images/headerbackground.jpeg');
+  background-image: url('images/headerbackground.jpeg', opacity=0.7);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% 100%;
+  background-size: cover;
 }
+
 </style>
 
 
-## Introduction
+## Travel Models Support Informed Decision Making
+- How will the transportation system perform 30 years into the future?
+- Where should a trolley be built to help the most people?
+- How will economic, demographic, or land use changes affect transportation system performance?
+A travel model can help answer these questions, and many more! 
 
-In a previous study, Deloitte Consulting LLP developed a method of creating city simulations through cellular location and geospatial data. Using these simulations of human activity and traffic patterns, better decisions can be made regarding modes of transportation or road construction. However, the current commonly used method of estimating transportation mode choice is a utility model that involves many features and coefficients that may not necessarily be important but still make the model more complex. Our goal is to use a tree-based approach - in particular, XGBoost - to identify just the features that are important for determining mode choice so that we can create a model that is simpler, robust, and easily deployable. By the end of the quarter, we plan to have a working model to predict mode choice and a written paper to report our results and analyses. 
 
-## Hypothesis
+## The Utility Travel Model 
+Idea: A commuter will choose the travel mode that maximizes their welfare 
+Assumption: The commuter is fully informed of each mode's attributes and considers all modes equally
+Other concerns: Can become very complex, takes a long time to run, and difficult to explain results
+<img src="images/utility.png">
+
+## Our Approach: Decision Tree Travel Model
+Idea: Based on the travel mode that other commuters chose, we predict a commuter with similar circumstances will choose the same mode. 
+<img src="images/tree.png">
 
 ## Data
 The datasets we use consists of two dataframes: trips and utilityvars. The first dataframe, trips comes from a csv that previously predicted the travel mode choice each activity took, linked to activity and person IDs.
