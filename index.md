@@ -2,7 +2,7 @@
 
 <style>
 .page-header {
-  background-image: url('images/headerbackground.jpeg', opacity=0.7);
+  background-image: url('images/headerbackground.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -15,18 +15,32 @@
 - How will the transportation system perform 30 years into the future?
 - Where should a trolley be built to help the most people?
 - How will economic, demographic, or land use changes affect transportation system performance?
+
 A travel model can help answer these questions, and many more! 
 
 
 ## The Utility Travel Model 
 Idea: A commuter will choose the travel mode that maximizes their welfare 
+
 Assumption: The commuter is fully informed of each mode's attributes and considers all modes equally
+
 Other concerns: Can become very complex, takes a long time to run, and difficult to explain results
+
 <img src="images/utility.png">
 
 ## Our Approach: Decision Tree Travel Model
-Idea: Based on the travel mode that other commuters chose, we predict a commuter with similar circumstances will choose the same mode. 
+Idea: Based on the travel mode that other commuters chose, we predict a commuter with similar conditions will choose the same mode. 
+
 <img src="images/tree.png">
+
+### XGBoost (Extreme Gradient Boost) Tree: An Optimized Decision Tree
+Features:
+- Learns from previous decision trees to make better predictions
+- Built-in parameters for complexity and overfitting
+- Faster than other classifiers
+
+<img src="images/xgboost.png">
+
 
 ## Data
 The datasets we use consists of two dataframes: trips and utilityvars. The first dataframe, trips comes from a csv that previously predicted the travel mode choice each activity took, linked to activity and person IDs.
