@@ -1,1 +1,12 @@
-theme: jekyll-theme-cayman
+# Site settings
+title: A Tree-Based Model for Predicting Travel Mode
+email:
+description: > # this means to ignore newlines until "baseurl:"
+baseurl: "/DSC180B.github.io-B05/" # the subpath of your site, e.g. /blog/
+url: "https://lkuwahara.github.io/" # the base hostname & protocol for your site
+
+twitter_username:
+github_username:
+
+# Build settings
+markdown: kramdown
