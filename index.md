@@ -1,3 +1,12 @@
+<style>
+body {
+  background-image: url('headerbackground.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
 # A Tree-Based Model for Predicting Travel Mode
 
 ## Introduction
