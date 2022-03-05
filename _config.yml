@@ -1,1 +1,3 @@
 theme: jekyll-theme-cayman
+header:
+  overlay_image: images/headerbackground.jpeg
