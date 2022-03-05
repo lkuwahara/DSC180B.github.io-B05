@@ -1,7 +1,7 @@
 # A Tree-Based Model for Predicting Travel Mode
 
 <style>
-body {
+head {
   background-image: url('images/headerbackground.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
