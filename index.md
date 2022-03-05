@@ -2,7 +2,7 @@
 
 <style>
 body {
-  background-image: url('/images/headerbackground.jpeg');
+  background-image: url('images/headerbackground.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
