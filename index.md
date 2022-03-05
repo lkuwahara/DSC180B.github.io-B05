@@ -59,14 +59,6 @@ Another descriptive variable we have is of income. The income group 3 is the hig
 
 <img src="images/data3img.png">
 
-## Techniques 
-
-### XGBoost
-
-### Bayesian Optimizer
-
-## XGBoost Model Implementation 
-
 ## Results 
 
 ### Evaluation 
