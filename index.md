@@ -68,7 +68,7 @@ Most commuters fall under the average income of $60k to $100k (Group 3). The lea
 
 After we finished the model, we created a validation pipeline to estimate the performance of our model and sought the potential problems in our model, like overfitting or imbalanced sample. 
   
-Below are the AUC curves for the training and testing sets over 100 epochs. We observe that the training curve improves steadily while the testing curve plateaus at an AUC of around 0.91, which means our model correctly predicts about 91\% of the test set. 
+Below are the AUC curves for the training and testing sets over 100 epochs. We observe that the training curve improves steadily while the testing curve plateaus at an AUC of around 0.91, which means our model correctly predicts about 91% of the test set. 
 
 <img src="images/eval1img.png">
 
@@ -82,19 +82,19 @@ To simplify our model, we want to use only a handful of features. We narrowed do
 
 <img src="images/eval3img.png">
 
-We compared the evaluation metrics of our model with the results that Deloitte Consulting LLC provided us from their utility model. For measurement of correctness, we referred to evaluation metrics such as accuracy, and sensitivity.
+We compared the evaluation metrics of our model with the results that Deloitte Consulting LLC provided us from their utility model. For measurement of correctness, we referred to evaluation metrics such as accuracy, sensitivity, and precision.
 
 Accuracy:
-- Utility: 48\%
-- XGBoost: 61\%
+- Utility: 48%
+- XGBoost: 61%
 
 Sensitivity:
-- Utility: 19\%
-- XGBoost: 29\%
+- Utility: 19%
+- XGBoost: 29%
 
 Precision:
-- Utility: 20\%
-- XGBoost: 39\%
+- Utility: 20%
+- XGBoost: 39%
 
 ## Conclusion
 
