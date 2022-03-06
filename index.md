@@ -66,7 +66,7 @@ Most commuters fall under the average income of $60k to $100k (Group 3). The lea
 
 ### Evaluation 
 
-After we finished the model, we created a validation pipeline to estimate the performance of our model and sought the potential problems in our model, like overfitting or imbalanced sample. For measurement of correctness, we referred to evaluation metrics such as accuracy, sensitivity, F1-score. The feedback indicates that our model did a great job on the sample data, but also causes a great deal of concern. In the next weeks, we would diagnose the problem and adjust our model accordingly.  
+After we finished the model, we created a validation pipeline to estimate the performance of our model and sought the potential problems in our model, like overfitting or imbalanced sample. 
   
 Below are the AUC curves for the training and testing sets over 100 epochs. We observe that the training curve improves steadily while the testing curve plateaus at an AUC of around 0.91, which means our model correctly predicts about 91\% of the test set. 
 
@@ -82,5 +82,20 @@ To simplify our model, we want to use only a handful of features. We narrowed do
 
 <img src="images/eval3img.png">
 
+We compared the evaluation metrics of our model with the results that Deloitte Consulting LLC provided us from their utility model. For measurement of correctness, we referred to evaluation metrics such as accuracy, and sensitivity.
+
+Accuracy:
+- Utility: 48\%
+- XGBoost: 61\%
+
+Sensitivity:
+- Utility: 19\%
+- XGBoost: 29\%
+
+Precision:
+- Utility: 20\%
+- XGBoost: 39\%
 
 ## Conclusion
+
+The results show that the XGBoost decision tree model performed better than the utility model across all evaluation metrics. We hope that as the model becomes more fine-tuned, we will be able to improve these numbers even more and provide urban planners and policy makers with accurate simulations that will assist them in making more informed decisions. 
