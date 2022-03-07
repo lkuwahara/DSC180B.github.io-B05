@@ -78,11 +78,11 @@ We also plotted ROC curves for each class using the One vs All technique, which 
 
 ### Feature Fine-tuning
 
-To simplify our model, we want to use only a handful of features. We narrowed down our choices by evaluating the feature importances, which indicates how important each feature was in building the model. Based on the graph below, we observed that employment density at the origin and destination regions (dempden, oempden) were the two most important features in determining trip mode. We intend to use all the features as or more important than the single occupancy vehicle cost (sovcost) in our optimized mode. 
+To simplify our model, we want to use only a handful of features. We narrowed down our choices by evaluating the feature importances, which indicates how important each feature was in building the model. Based on the graph below, we observed that employment density at the origin and destination regions (dempden, oempden) were the two most important features in determining trip mode. We intend to use all the features as or more important than the parkingcost in our optimized mode. 
 
 <img src="images/eval3img.png">
 
-We compared the evaluation metrics of our model with the results that Deloitte Consulting LLC provided us from their utility model. For measurement of correctness, we referred to evaluation metrics such as accuracy, sensitivity, and precision.
+We compared the evaluation metrics of our model with the results that Deloitte Consulting LLC provided us from their utility model. For measurement of correctness, we referred to accuracy, sensitivity, precision, and F1-score for evaluation metrics
 
 Accuracy:
 - Utility: 48%
@@ -95,6 +95,10 @@ Sensitivity:
 Precision:
 - Utility: 20%
 - XGBoost: 39%
+
+F1-score:
+- Utility: 20%
+- XGBoost: 33%
 
 ## Conclusion
 
